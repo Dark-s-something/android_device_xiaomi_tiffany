@@ -14,6 +14,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from tiffany device
 $(call inherit-product, device/xiaomi/tiffany/device.mk)
 
+TARGET_IS_LEGACY := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tiffany
 PRODUCT_NAME := lineage_tiffany
